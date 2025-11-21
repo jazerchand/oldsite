@@ -1,0 +1,172 @@
+:root{
+    --navy: #180C51;
+    --badass: #BADA55;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+
+body,html{
+    background-color: var(--white);
+    margin: 0;
+}
+
+body{
+    color: var(--navy);
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-weight: inherit;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.serif{
+    font-family: "Baskervville", serif;
+    font-weight: 500;
+    letter-spacing: -.5px;
+}
+
+.sans{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 200;
+}
+
+section{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-color: var(--white);
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 117px;
+    width: 100%;
+}
+
+.header{
+    justify-content: space-between;
+}
+
+.header_logo{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.header_logo img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+.header_nav a{
+    padding: 1.1em;
+    font-size: 1.1vw;
+    text-decoration: none;
+    outline: none;
+    color: var(--navy);
+}
+
+.header_nav a:hover{
+    color: var(--badass);
+}
+
+.header_nav-active{
+    color: var(--badass)!important;
+}
+
+.hero{
+    height: 24.5vw;
+}
+
+.intro{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.3vw;
+    width: 55%;
+}
+
+.works{
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+}
+
+.thumbnail{
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.thumbnail img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.thumbnail_overlay{
+    background-color: #eddfd8b3;
+    color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.thumbnail:hover .thumbnail_overlay{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.thumbnail_overlay-text{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.blackout{
+    text-align: center;
+    font-size: 1.2vw;
+    margin-bottom: 4em;
+}
+
+.blackout span{
+    font-weight: 500;
+}
+
+.about_prompt{
+    font-size: 1.6vw;
+}
+
+.button_primary {
+    text-decoration: none;
+    font-size: 1.1vw;
+    padding: .4em 1.5em;
+    border: 1.5px solid var(--badass);
+    color: var(--badass);
+    font-weight: 500;
+    outline: none;
+}
+
+.home_end{
+    margin-bottom: 8em;
+}
