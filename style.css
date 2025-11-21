@@ -20,6 +20,16 @@ p,h1,h2,h3,h4,h5,h6{
     font-weight: inherit;
 }
 
+a{
+    font-family: inherit;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -45,8 +55,12 @@ p,h1,h2,h3,h4,h5,h6{
     font-weight: 200;
 }
 
+.margin_bottom{
+    margin-bottom: 4em;
+}
+
 section{
-    width: 80%;
+    width: 77%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -70,9 +84,6 @@ header{
 }
 
 .header_logo img{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
     filter: brightness(0.3);
 }
 
@@ -101,6 +112,8 @@ header{
     margin-right: auto;
     font-size: 2.3vw;
     width: 55%;
+    padding-right: 5.5em;
+    padding-bottom: 2.5em;
 }
 
 .works{
@@ -113,12 +126,6 @@ header{
 .thumbnail{
     aspect-ratio: 1/1;
     position: relative;
-}
-
-.thumbnail img{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 .thumbnail_overlay{
@@ -165,8 +172,117 @@ header{
     color: var(--badass);
     font-weight: 500;
     outline: none;
+    transition: 0.4s ease;
 }
 
-.home_end{
+.button_primary:hover{
+    border-color: #4923f4;
+    background-color: #4923f4;
+    color: var(--white);
+}
+
+.button_inactive{
+    border-color: lightgray;
+    color: lightgray;
+    cursor: default;
+    pointer-events: none;
+}
+
+.page_end{
     margin-bottom: 8em;
+}
+
+
+/* SUBPAGES CSS */
+
+.project_body{
+    color: var(--black);
+}
+
+.project_hero{
+    width: 65%;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.project_hero-left{
+    width: 55%;
+}
+
+.project_hero-right{
+    padding-right: 4em;
+}
+
+.project_hero h1{
+    font-size: 3.6vw;
+    margin-bottom: .35em;
+}
+
+.project_hero h2{
+    font-size: 1.65vw;
+}
+
+.stamp{
+    margin-top: 2em;
+}
+
+.project_hero h5, .project_inforow-split h5{
+    font-size: .75vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.project_hero p{
+    font-size: 1.05vw;
+    font-weight: 300;
+    line-height: 1.4vw;
+}
+
+.project_cover{
+    aspect-ratio: 16/9;
+    margin-bottom: 5em;
+}
+
+.project_inforow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.project_inforow-left{
+    flex: .3;
+}
+
+.project_inforow-right{
+    flex: .61;
+}
+
+.project_inforow h3{
+    font-size: 2.35vw;
+    font-weight: 400;
+}
+
+.project_inforow p{
+    font-size: 1.41vw;
+    line-height: 1.8vw;
+}
+
+.project_inforow span{
+    font-weight: 400;
+}
+
+.project_takeaways{
+    font-weight: 400;
+}
+
+.project_takeaways li{
+    line-height: 3.5vw;
+}
+
+.project_inforow-split div{
+    flex: 1;
 }
