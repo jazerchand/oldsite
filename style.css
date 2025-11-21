@@ -24,7 +24,7 @@ a{
     font-family: inherit;
 }
 
-img{
+img, video{
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -195,11 +195,11 @@ header{
 
 /* SUBPAGES CSS */
 
-.project_body{
+.project_body,.about_body{
     color: var(--black);
 }
 
-.project_hero{
+.project_hero,.about_hero{
     width: 65%;
     justify-content: space-between;
     align-items: start;
@@ -215,13 +215,28 @@ header{
     padding-right: 4em;
 }
 
-.project_hero h1{
+.project_hero-center{
+    width: 50%;
+    text-align: center;
+}
+
+.project_hero h1, .about_hero h1{
     font-size: 3.6vw;
     margin-bottom: .35em;
 }
 
 .project_hero h2{
     font-size: 1.65vw;
+}
+
+
+.project_hero-center h1{
+    font-weight: 500;
+    color: var(--badass);   
+}
+
+.project_hero-center h2{
+    font-size: 1.85vw;
 }
 
 .stamp{
@@ -266,12 +281,12 @@ header{
     font-weight: 400;
 }
 
-.project_inforow p{
+.project_inforow p, .about_hero p{
     font-size: 1.41vw;
     line-height: 1.8vw;
 }
 
-.project_inforow span{
+.project_inforow span, .about_hero span{
     font-weight: 400;
 }
 
