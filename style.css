@@ -56,7 +56,7 @@ img, video{
 }
 
 .margin_bottom{
-    margin-bottom: 4em;
+    margin-bottom: 4vw;
 }
 
 section{
@@ -70,7 +70,7 @@ header{
     position: relative;
     left: 0;
     top: 0;
-    height: 117px;
+    height: 7vw;
     width: 100%;
 }
 
@@ -112,8 +112,8 @@ header{
     margin-right: auto;
     font-size: 2.3vw;
     width: 55%;
-    padding-right: 5.5em;
-    padding-bottom: 2.5em;
+    padding-right: 5.5vw;
+    padding-bottom: 2.5vw;
 }
 
 .works{
@@ -153,7 +153,7 @@ header{
 .blackout{
     text-align: center;
     font-size: 1.2vw;
-    margin-bottom: 4em;
+    margin-bottom: 4vw;
 }
 
 .blackout span{
@@ -203,8 +203,8 @@ header{
     width: 65%;
     justify-content: space-between;
     align-items: start;
-    margin-top: 2em;
-    margin-bottom: 4em;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
 }
 
 .project_hero-left{
@@ -212,7 +212,7 @@ header{
 }
 
 .project_hero-right{
-    padding-right: 4em;
+    padding-right: 4vw;
 }
 
 .project_hero-center{
@@ -222,7 +222,7 @@ header{
 
 .project_hero h1, .about_hero h1{
     font-size: 3.6vw;
-    margin-bottom: .35em;
+    margin-bottom: .35vw;
 }
 
 .project_hero h2{
@@ -240,7 +240,7 @@ header{
 }
 
 .stamp{
-    margin-top: 2em;
+    margin-top: 2vw;
 }
 
 .project_hero h5, .project_inforow-split h5{
@@ -258,14 +258,14 @@ header{
 
 .project_cover{
     aspect-ratio: 16/9;
-    margin-bottom: 5em;
+    margin-bottom: 5vw;
 }
 
 .project_inforow{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 4em;
+    margin-bottom: 4vw;
 }
 
 .project_inforow-left{
@@ -300,4 +300,186 @@ header{
 
 .project_inforow-split div{
     flex: 1;
+}
+
+.project_inforow-play{
+    margin-bottom: 1.75vw;
+}
+
+.linkedin_icon{
+    display: none;
+}
+
+
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 20vw;
+    }
+
+    .header_logo{
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .header_nav a {
+        padding: 0.3em 0.7em;
+        font-size: 5.1vw;
+    }
+
+    .linkedin_text{
+        display: none;
+    }
+
+    .linkedin_icon{
+        display: inline-block;
+    }
+
+    .linkedin_icon img{
+        width: 1.4em;
+        position: relative;
+        top: 1.5vw;
+    }
+
+    section{
+        width: 83%;
+    }
+
+    img, video {
+        height: 100%;
+    }
+
+    .margin_bottom{
+        margin-bottom: 2em;
+    }
+
+    .works{
+        grid-template-columns: repeat(1, 1fr);
+        width: 95%;
+    }
+
+    .hero{
+        height: 92vw;
+    }
+
+    .intro{
+        font-size: 7.2vw;
+        width: 100%;
+        padding: 0 1em 0em 0;
+    }
+
+    .page_end{
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    .blackout{
+        text-align: left;
+        font-size: 5.2vw;
+        margin-bottom: 3em;
+    }
+
+    .about_prompt{
+        font-size: 5.6vw;
+    }
+
+    .button_primary{
+        font-size: 5.1vw;
+        text-align: center;
+    }
+
+    .project_hero, .about_hero{
+        width: 100%;
+        margin-bottom: 1.5em;
+        flex-direction: column;
+    }
+
+    .project_hero-left {
+        width: 79%;
+    }
+
+    .project_hero h1, .about_hero h1 {
+        font-size: 9.6vw;
+        margin-bottom: .15vw;
+    }
+
+    .project_hero h2 {
+        font-size: 5.6vw;
+    }
+
+    .project_hero h5, .project_inforow-split h5 {
+        font-size: 3.25vw;
+        letter-spacing: 1.5px;
+    }
+
+    .project_hero p {
+        font-size: 4.8vw;
+        line-height: 5.8vw;
+    }
+
+    .stamp{
+        margin-top: 2em;
+    }
+
+    .project_cover {
+        width: 100%;
+        aspect-ratio: 5/4;
+        margin-bottom: 3em;
+    }
+
+    .project_inforow {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .project_inforow h3 {
+        font-size: 7.5vw;
+        margin-bottom: .40em;
+    }
+
+    .project_inforow p, .about_hero p {
+        font-size: 5.2vw;
+        line-height: 6.6vw;
+    }
+
+    .project_inforow-image{
+        width: 100vw;
+        aspect-ratio: 5 / 4;
+        position: relative;
+        left: -8.5vw;
+    }
+    
+    ul{
+        margin-block-end: 0;
+    }
+
+    .project_takeaways li {
+        line-height: 2.25em;
+    }
+
+    .project_inforow-subimg{    
+        width: 85%;
+        margin-top: .5em;
+    }
+
+    .project_hero-center {
+        width: 79%;
+        text-align: center;
+    }
+
+    .project_inforow-play{
+        margin-bottom: .5em;
+    }
+
+}
+
+@media screen and (min-width: 601px) {
+    /* HIDE MOBILE NAV */
+    .linkedin_icon{
+        display: none;
+    }
 }
