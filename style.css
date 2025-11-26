@@ -454,10 +454,8 @@ header{
     }
 
     .project_cover img, .project_inforow-image img{
-        height: 100vh;           
-        height: -webkit-fill-available; 
-        height: -moz-available;     
-        height: fill-available; 
+        height: 100%;
+        aspect-ratio: 5/4;
     }
     
     ul{
