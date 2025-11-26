@@ -350,6 +350,7 @@ header{
 
     .project_cover img, .project_inforow-image img {
         aspect-ratio: 5/4;
+        height: 100%;
     }
 
     .margin_bottom{
