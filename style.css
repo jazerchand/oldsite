@@ -348,11 +348,6 @@ header{
         width: 83%;
     }
 
-    .project_cover img, .project_inforow-image img {
-        aspect-ratio: 5/4;
-        height: 100%;
-    }
-
     .margin_bottom{
         margin-bottom: 2em;
     }
@@ -456,6 +451,13 @@ header{
         aspect-ratio: 5 / 4;
         position: relative;
         left: -8.5vw;
+    }
+
+    .project_cover img, .project_inforow-image img{
+        height: 100vh;           
+        height: -webkit-fill-available; 
+        height: -moz-available;     
+        height: fill-available; 
     }
     
     ul{
