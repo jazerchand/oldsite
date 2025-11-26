@@ -348,8 +348,8 @@ header{
         width: 83%;
     }
 
-    img, video {
-        height: 100%;
+    .project_cover img, .project_inforow-image img {
+        aspect-ratio: 5/4;
     }
 
     .margin_bottom{
@@ -359,6 +359,10 @@ header{
     .works{
         grid-template-columns: repeat(1, 1fr);
         width: 95%;
+    }
+
+    .thumbnail_overlay-text {
+        font-size: 5.1vw;
     }
 
     .hero{
